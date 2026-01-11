@@ -3,12 +3,12 @@ import { TemplateUrlState } from './use-template-url-state'
 
 // Default templates to show when no filters are applied
 const DEFAULT_TEMPLATE_NAMES = [
-  'gill-next-tailwind-basic', // Fullstack boilerplate (Next.js)
-  'gill-react-vite-tailwind-basic', // Fullstack boilerplate (Vite)
+  'trezoagill-next-tailwind-basic', // Fullstack boilerplate (Next.js)
+  'trezoagill-react-vite-tailwind-basic', // Fullstack boilerplate (Vite)
   'web3js-expo', // Mobile
-  'gill-jito-airdrop', // Airdrop
-  'x402-solana-protocol', // Payments
-  'gill-node-express', // Backend
+  'trezoagill-jito-airdrop', // Airdrop
+  'x402-trezoaanchor-protocol', // Payments
+  'trezoagill-node-express', // Backend
 ]
 
 export function filterTemplates({

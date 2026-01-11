@@ -1,4 +1,4 @@
-const CACHE_NAME = 'solana-templates-v1'
+const CACHE_NAME = 'trezoa-templates-v1'
 const urlsToCache = [
   '/',
   '/manifest.json',

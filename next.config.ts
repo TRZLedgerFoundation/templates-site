@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
-        pathname: '/solana-foundation/templates/**',
+        pathname: '/trezoa-foundation/templates/**',
       },
     ],
   },

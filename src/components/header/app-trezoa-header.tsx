@@ -5,7 +5,7 @@ import { useSearchModal } from '../hooks/use-search-modal'
 import { HeaderLogo, HeaderSearchButton, HeaderNavigation } from '.'
 import type { HeaderNavigationLink } from '.'
 
-export function AppSolanaHeader({ links }: { links: HeaderNavigationLink[] }) {
+export function AppTrezoaHeader({ links }: { links: HeaderNavigationLink[] }) {
   const searchModal = useSearchModal()
 
   return (

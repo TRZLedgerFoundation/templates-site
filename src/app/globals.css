@@ -149,7 +149,7 @@
   animation: metallic-shimmer 8s linear infinite;
 }
 
-.solana-border {
+.trezoa-border {
   --stroke: 1px;
   --bg-color: transparent;
   --rotation: 0deg;
@@ -170,16 +170,16 @@
       border-box;
 }
 
-.solana-border:hover {
-  animation: solana-shimmer 6s linear infinite;
+.trezoa-border:hover {
+  animation: trezoa-shimmer 6s linear infinite;
   background:
     linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
     conic-gradient(from var(--rotation) at 50% 50%, #9945ff 0%, #14f195 60%, #00d4ff 80%, #9945ff 100%) border-box;
 }
 
-.solana-border.selected {
+.trezoa-border.selected {
   opacity: 1 !important;
-  animation: solana-shimmer 6s linear infinite;
+  animation: trezoa-shimmer 6s linear infinite;
   background:
     linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
     conic-gradient(from var(--rotation) at 50% 50%, #9945ff 0%, #14f195 60%, #00d4ff 80%, #9945ff 100%) border-box;
@@ -194,7 +194,7 @@
   }
 }
 
-@keyframes solana-shimmer {
+@keyframes trezoa-shimmer {
   0% {
     --rotation: 0deg;
   }

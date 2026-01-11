@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from 'next'
 import { AppProviders } from '@/components/app-providers'
 import './globals.css'
-import { AppSolanaLayout } from '@/components/app-solana-layout'
+import { AppTrezoaLayout } from '@/components/app-trezoa-layout'
 import { ServiceWorkerRegistration } from '@/components/ServiceWorkerRegistration'
 import { TemplatesProviderWrapper } from '@/components/providers/templates-provider-wrapper'
 
 export const metadata: Metadata = {
-  title: 'Solana Templates',
-  description: 'Templates for create-solana-dapp',
+  title: 'Trezoa Templates',
+  description: 'Templates for create-trezoa-dapp',
   manifest: '/manifest.json',
   icons: {
     icon: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Solana Templates',
+    title: 'Trezoa Templates',
   },
   openGraph: {
-    title: 'Solana Templates',
-    description: 'Templates for create-solana-dapp',
+    title: 'Trezoa Templates',
+    description: 'Templates for create-trezoa-dapp',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Solana Templates',
-    description: 'Templates for create-solana-dapp',
+    title: 'Trezoa Templates',
+    description: 'Templates for create-trezoa-dapp',
   },
 }
 
@@ -56,7 +56,7 @@ export default function RootLayout({
           <div className="relative z-10">
             <AppProviders>
               <TemplatesProviderWrapper>
-                <AppSolanaLayout>{children}</AppSolanaLayout>
+                <AppTrezoaLayout>{children}</AppTrezoaLayout>
               </TemplatesProviderWrapper>
             </AppProviders>
           </div>

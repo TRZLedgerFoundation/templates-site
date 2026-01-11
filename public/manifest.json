@@ -1,7 +1,7 @@
 {
-  "name": "Solana Templates Site",
-  "short_name": "Solana Templates",
-  "description": "Discover and explore Solana development templates",
+  "name": "Trezoa Templates Site",
+  "short_name": "Trezoa Templates",
+  "description": "Discover and explore Trezoa development templates",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

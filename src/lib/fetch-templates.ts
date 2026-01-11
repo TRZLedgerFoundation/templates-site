@@ -7,11 +7,11 @@ import { markdownToHtml } from './markdown-to-html'
 import { GITHUB_TEMPLATES_JSON, GITHUB_RAW_BASE } from './config/github'
 
 const source: TemplateSource = {
-  id: 'solana',
-  name: 'Solana',
-  source: 'gh:solana-foundation/templates',
+  id: 'trezoa',
+  name: 'Trezoa',
+  source: 'gh:trezoa-foundation/templates',
   provider: 'gh',
-  owner: 'solana-foundation',
+  owner: 'trezoa-foundation',
   repo: 'templates',
 }
 
@@ -78,7 +78,7 @@ export async function fetchTemplatesFromGitHub(): Promise<Template[]> {
           name: template.name,
           path: template.path,
           readme,
-          repoUrl: `https://github.com/solana-foundation/templates/tree/main/${template.path}`,
+          repoUrl: `https://github.com/trezoa-foundation/templates/tree/main/${template.path}`,
           usecase: template.usecase,
         })
       }

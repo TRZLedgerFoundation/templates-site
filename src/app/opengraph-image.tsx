@@ -1,7 +1,7 @@
 import { ImageResponse } from '@vercel/og'
 
 export const runtime = 'edge'
-export const alt = 'Solana Templates - Start building on Solana'
+export const alt = 'Trezoa Templates - Start building on Trezoa'
 export const size = {
   width: 1200,
   height: 630,
@@ -24,7 +24,7 @@ export default async function Image() {
           overflow: 'hidden',
         }}
       >
-        {/* Solana gradient shapes */}
+        {/* Trezoa gradient shapes */}
         <div
           style={{
             position: 'absolute',
@@ -101,7 +101,7 @@ export default async function Image() {
               letterSpacing: '-0.02em',
             }}
           >
-            Solana Templates
+            Trezoa Templates
           </div>
 
           <div
@@ -117,7 +117,7 @@ export default async function Image() {
               letterSpacing: '-0.01em',
             }}
           >
-            Start building on Solana with production-ready templates
+            Start building on Trezoa with production-ready templates
           </div>
 
           <div
@@ -152,7 +152,7 @@ export default async function Image() {
                 letterSpacing: '-0.01em',
               }}
             >
-              npx create-solana-dapp@latest
+              npx create-trezoa-dapp@latest
             </span>
           </div>
         </div>

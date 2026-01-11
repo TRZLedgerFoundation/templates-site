@@ -2,11 +2,11 @@ import { TemplateSource } from './types'
 
 export const sources: TemplateSource[] = [
   {
-    id: 'solana',
-    name: 'Solana',
-    source: 'gh:solana-foundation/templates',
+    id: 'trezoa',
+    name: 'Trezoa',
+    source: 'gh:trezoa-foundation/templates',
     provider: 'gh',
-    owner: 'solana-foundation',
+    owner: 'trezoa-foundation',
     repo: 'templates',
   },
 ]

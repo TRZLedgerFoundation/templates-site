@@ -58,22 +58,22 @@ export const filters: TemplateFilter[] = [
     name: 'Frameworks',
   },
   {
-    id: 'solana-sdks',
+    id: 'trezoa-sdks',
     keywords: [
       {
-        id: 'solana-kit',
-        name: '@solana/kit',
+        id: 'trezoa-kit',
+        name: '@trezoa/kit',
       },
       {
-        id: 'solana-web3js',
-        name: '@solana/web3.js',
+        id: 'trezoa-web3js',
+        name: '@trezoa/web3.js',
       },
       {
-        id: 'gill',
-        name: 'Gill',
+        id: 'trezoagill',
+        name: 'Trezoagill',
       },
     ],
-    name: 'Solana SDKs',
+    name: 'Trezoa SDKs',
   },
   {
     id: 'wallet-adapters',

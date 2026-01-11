@@ -38,7 +38,7 @@ export function TemplatesUiSidebarDetail({ template }: { template: Template }) {
         <AppModal title="Generate">
           <div className="space-y-4  overflow-x-auto">
             <p>
-              Generate a new Solana project using the <strong>{template.displayName || template.name}</strong> template.
+              Generate a new Trezoa project using the <strong>{template.displayName || template.name}</strong> template.
             </p>
             <TemplatesUiGenerateCommand template={template} />
             <p>Run the command above in your terminal to get started.</p>

@@ -3,7 +3,7 @@
  * Change these values to switch between fork/branch or point to main after PR merge
  */
 export const GITHUB_CONFIG = {
-  owner: 'solana-foundation',
+  owner: 'trezoa-foundation',
   repo: 'templates',
   branch: 'main',
 } as const

@@ -29,16 +29,16 @@ export async function generateMetadata({
   const displayName = template.displayName || template.name
 
   return {
-    title: `${displayName} - Solana Template`,
+    title: `${displayName} - Trezoa Template`,
     description: template.description,
     openGraph: {
-      title: `${displayName} - Solana Template`,
+      title: `${displayName} - Trezoa Template`,
       description: template.description,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${displayName} - Solana Template`,
+      title: `${displayName} - Trezoa Template`,
       description: template.description,
     },
   }

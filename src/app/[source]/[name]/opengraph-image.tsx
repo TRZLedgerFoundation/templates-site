@@ -1,7 +1,7 @@
 import { ImageResponse } from '@vercel/og'
 
 export const runtime = 'edge'
-export const alt = 'Solana Template'
+export const alt = 'Trezoa Template'
 export const size = {
   width: 1200,
   height: 630,
@@ -15,8 +15,8 @@ export default async function Image({ params }: { params: Promise<{ name: string
   const formatTemplateName = (name: string) => {
     // Remove source prefix if it exists
     let cleanName = name
-    if (name.startsWith('solana-')) {
-      cleanName = name.replace('solana-', '')
+    if (name.startsWith('trezoa-')) {
+      cleanName = name.replace('trezoa-', '')
     }
 
     // Split by hyphen and format each part
@@ -43,10 +43,10 @@ export default async function Image({ params }: { params: Promise<{ name: string
         node: 'Node',
         express: 'Express',
         web3js: 'Web3.js',
-        gill: 'Gill',
+        trezoagill: 'Trezoagill',
         mobile: 'Mobile',
         dapp: 'dApp',
-        spl: 'SPL',
+        tpl: 'TPL',
       }
 
       return techTerms[part.toLowerCase()] || part
@@ -58,7 +58,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
   // Generate a description based on the name
   const generateDescription = (name: string, source: string) => {
     const parts = name.toLowerCase().split('-')
-    const sourceName = source.replace('solana-', '').replace('-', ' ')
+    const sourceName = source.replace('trezoa-', '').replace('-', ' ')
 
     const tech = []
     let type = 'template'
@@ -73,7 +73,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
     if (parts.includes('express')) tech.push('Express')
     if (parts.includes('node') || parts.includes('nodejs')) tech.push('Node.js')
     if (parts.includes('web3js')) tech.push('Web3.js')
-    if (parts.includes('gill')) tech.push('Gill (based on @solana/kit)')
+    if (parts.includes('trezoagill')) tech.push('Trezoagill (based on @trezoa/kit)')
 
     // Identify template type
     if (parts.includes('mobile')) type = 'mobile template'
@@ -86,7 +86,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
       return `${tech.join(', ')} ${type} with Wallet UI integration`
     }
 
-    return `Solana development ${type} from ${sourceName}`
+    return `Trezoa development ${type} from ${sourceName}`
   }
 
   // Generate keywords based on the name
@@ -95,7 +95,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
     const keywords = new Set<string>()
 
     // Add base keywords
-    keywords.add('solana')
+    keywords.add('trezoa')
 
     // Map parts to keywords
     const keywordMap: Record<string, string[]> = {
@@ -112,7 +112,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
       node: ['nodejs'],
       nodejs: ['nodejs'],
       web3js: ['web3js', 'blockchain'],
-      gill: ['gill', 'solana-kit'],
+      trezoagill: ['trezoagill', 'trezoa-kit'],
       wallet: ['wallet', 'wallet-ui'],
       basic: ['starter', 'template'],
       counter: ['dapp', 'example'],
@@ -121,7 +121,7 @@ export default async function Image({ params }: { params: Promise<{ name: string
     parts.forEach((part) => {
       if (keywordMap[part]) {
         keywordMap[part].forEach((k) => keywords.add(k))
-      } else if (part !== 'solana') {
+      } else if (part !== 'trezoa') {
         keywords.add(part)
       }
     })

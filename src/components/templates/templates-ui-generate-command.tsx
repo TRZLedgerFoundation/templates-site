@@ -10,14 +10,14 @@ const pms = ['npm', 'pnpm', 'yarn', 'bun']
 function getCommand(pm: string, template: string) {
   switch (pm) {
     case 'npm':
-      // NPM supports the '@latest' task but `npm create solana-dapp@latest` does not take any parameters (eg, -t ...)
-      return `npx -y create-solana-dapp@latest -t ${template}`
+      // NPM supports the '@latest' task but `npm create trezoa-dapp@latest` does not take any parameters (eg, -t ...)
+      return `npx -y create-trezoa-dapp@latest -t ${template}`
     case 'yarn':
       // Yarn only supports the `latest` tag
-      return `yarn create solana-dapp -t ${template}`
+      return `yarn create trezoa-dapp -t ${template}`
     default:
       // All other package managers support the `@latest` tag and best practice is to always use it explicitly
-      return `${pm} create solana-dapp@latest -t ${template}`
+      return `${pm} create trezoa-dapp@latest -t ${template}`
   }
 }
 
