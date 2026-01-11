@@ -9,9 +9,9 @@ import { GITHUB_TEMPLATES_JSON, GITHUB_RAW_BASE } from './config/github'
 const source: TemplateSource = {
   id: 'trezoa',
   name: 'Trezoa',
-  source: 'gh:trezoa-foundation/templates',
+  source: 'gh:trzledgerfoundation/templates',
   provider: 'gh',
-  owner: 'trezoa-foundation',
+  owner: 'trzledgerfoundation',
   repo: 'templates',
 }
 
@@ -78,7 +78,7 @@ export async function fetchTemplatesFromGitHub(): Promise<Template[]> {
           name: template.name,
           path: template.path,
           readme,
-          repoUrl: `https://github.com/trezoa-foundation/templates/tree/main/${template.path}`,
+          repoUrl: `https://github.com/trzledgerfoundation/templates/tree/main/${template.path}`,
           usecase: template.usecase,
         })
       }

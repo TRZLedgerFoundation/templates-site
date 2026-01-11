@@ -1,6 +1,6 @@
 # Trezoa Templates Site
 
-A Next.js website that showcases templates from the [trezoa-foundation/templates](https://github.com/trezoa-foundation/templates) repository. Users can browse, search, and filter Trezoa dApp templates to find the right starting point for their project.
+A Next.js website that showcases templates from the [trzledgerfoundation/templates](https://github.com/trzledgerfoundation/templates) repository. Users can browse, search, and filter Trezoa dApp templates to find the right starting point for their project.
 
 ## Overview
 
@@ -26,7 +26,7 @@ This site dynamically fetches template metadata from the `templates.json` file i
 
 ### Data Flow
 
-1. **Template Metadata**: Fetched from `https://raw.githubusercontent.com/trezoa-foundation/templates/main/templates.json`
+1. **Template Metadata**: Fetched from `https://raw.githubusercontent.com/trzledgerfoundation/templates/main/templates.json`
 2. **README Content**: Fetched per-template from the templates repo
 3. **Images**: Loaded from template directories in the templates repo
 4. **Caching**: Template data is cached for 60 seconds, READMEs for 1 hour
@@ -51,7 +51,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ## Template Data Source
 
-The site pulls template information from the [trezoa-foundation/templates](https://github.com/trezoa-foundation/templates) repository. The templates repo generates a `templates.json` file that contains:
+The site pulls template information from the [trzledgerfoundation/templates](https://github.com/trzledgerfoundation/templates) repository. The templates repo generates a `templates.json` file that contains:
 
 - Template metadata (name, description, keywords)
 - Path to template directory

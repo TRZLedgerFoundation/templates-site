@@ -4,9 +4,9 @@ export const sources: TemplateSource[] = [
   {
     id: 'trezoa',
     name: 'Trezoa',
-    source: 'gh:trezoa-foundation/templates',
+    source: 'gh:trzledgerfoundation/templates',
     provider: 'gh',
-    owner: 'trezoa-foundation',
+    owner: 'trzledgerfoundation',
     repo: 'templates',
   },
 ]

@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
-        pathname: '/trezoa-foundation/templates/**',
+        pathname: '/trzledgerfoundation/templates/**',
       },
     ],
   },
